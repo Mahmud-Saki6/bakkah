@@ -1,3 +1,10 @@
+/* Import Poppins font (Google Fonts) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +42,829 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.container {
+  max-width: 1700px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* header section start */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 30px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  background-color: white;
+  font-family: Arial, sans-serif;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px;
+}
+
+.header__logo img {
+  height: 40px;
+  object-fit: contain;
+}
+
+.logo-text {
+  font-size: 22px;
+  font-weight: bold;
+  color: #e12222;
+}
+
+.sub-text {
+  font-size: 10px;
+  color: #888;
+  letter-spacing: 1px;
+  margin-left: 4px;
+  text-transform: uppercase;
+}
+
+.header__nav {
+  display: flex;
+  gap: 20px;
+  background: #f5f5f5;
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+.header__nav a {
+  text-decoration: none;
+  font-weight: 500;
+  color: black;
+  font-size: 16px;
+  padding: 10px 6px;
+}
+
+.header__nav a.active {
+  color: #aaa;
+  cursor: default;
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.search-btn {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.contact-btn {
+  background-color: #e12222;
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.contact-btn:hover {
+  background-color: #c61818;
+}
+
+.header__right img{
+width: 18px;
+height: 18px;
+}
+
+/* header section end */
+
+/* hero section start */
+
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 50px;
+  background: rgba(0, 0, 0, 0.3);
+  overflow: visible;
+}
+
+.sector-buttons {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px; /* increased for visibility */
+  overflow: visible;
+}
+
+.sector-btn {
+  position: relative;
+  background-color: #222;
+  color: white;
+  padding: 14px 28px;
+  width: 332px;
+  height: 63px;
+  border: none;
+  border-radius: 12px;
+  font-size: 18px;
+  font-family: 'Arial', sans-serif;
+  cursor: pointer;
+  transition: background-color 0.1s ease, color 0.1s ease;
+  overflow: visible;
+  z-index: 1;
+}
+
+.sector-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: white;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+  border-radius: 12px;
+}
+
+.sector-btn:hover::before {
+  transform: scaleX(1);
+}
+
+.sector-btn:hover {
+  background-color: white;
+  color: #e12222;
+  border-radius: 12px;
+}
+
+
+/* Red underline animation on hover */
+.sector-btn::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  height: 6px;
+  width: 0;
+  background-color: #e12222;
+  border-radius: 5px;
+  transition: width 0.4s ease;
+  z-index: 2;
+}
+.sector-btn:hover::after {
+  width: 100%;
+}
+
+.sector-btn.active {
+  background-color: white;
+  color: #e12222;
+  font-weight: bold;
+  border-radius: 12px;
+}
+
+.sector-btn.active::before {
+  display: none;
+}
+
+.sector-btn.active::after {
+  width: 100%;
+}
+
+/* hero section ends */
+
+
+/* Engineering Services start */
+
+.service-section {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+ margin-bottom: 80px;
+  background-color: #fff;
+}
+
+.service-title {
+  font-size: 72px;
+  font-weight: 300;
+  color: #000;
+  margin-bottom: 24px;
+}
+
+.service-description {
+  max-width: 800px;
+  margin: 0 auto 40px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #333;
+}
+
+.service-button {
+  background-color: #e12222;
+  color: white;
+  padding: 14px 32px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.service-button:hover {
+  background-color: #c61818;
+}
+
+ /* Engineering Services end */
+
+
+  /* Our Services section start*/
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border-bottom: 2px solid #ccc; */
+  font-family: 'Poppins', sans-serif;
+
+ padding: 0px 40px;
+}
+
+.section-icon {
+  width: 28px;
+  margin-right: 16px;
+}
+
+
+.section-title {
+  font-size: 46px;
+  font-weight: 300;
+  margin: 0;
+}
+
+
+/* the second section */
+.sectors-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0px 40px;
+  /* border-bottom: 2px solid #ccc; */
+  flex-wrap: wrap;
+  
+}
+
+.sectors-left {
+  flex: 1;
+  min-width: 300px;
+}
+
+.sectors-left h4 {
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+
+.sectors-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 500px;
+}
+
+.sector-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80px;
+}
+
+.sector-item img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 5px;
+}
+
+.sector-item p {
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  font-weight: 200;
+}
+
+
+.sectors-right {
+
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sectors-right h1 {
+  font-size: 72px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300; /* Previously 300 */
+  text-align: center;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.sectors-right .description {
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 40px;
+  width: 584px;
+  text-align: center;
+}
+
+.about-text{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.about-text a{
+ text-decoration: none;
+ color: #ED1C24;
+}
+
+.about-text span{
+ color: #ED1C24;
+ padding-right: 10px;
+}
+
+  /* Our Services section end*/
+
+  /* our division start */
+.Our-division{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+}
+.arrow{
+  display: flex;
+  gap: 20px
+}
+
+.arrow img{
+  width: 50px;
+  height: 26px;
+}
+
+/* slider css */
+
+.our-division-wrapper {
+  padding: 40px;
+}
+
+.our-division-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.arrow img {
+  width: 50px;
+  margin-left: 10px;
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.arrow img.disabled {
+  opacity: 0.3;
+  cursor: default;
+  pointer-events: none;
+}
+
+.our-division-slider {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+  transition: all 0.3s ease-in-out;
+}
+
+.division-card {
+  flex: 1;
+  min-width: 30%;
+  background: #fff;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.division-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px 8px 0 0;
+}
+
+.division-logo {
+  position: absolute;
+  width: 120px;
+  margin: 10px;
+}
+
+.division-title {
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.read-more {
+  padding: 0 10px 10px 10px;
+  color: red;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+  /* our division end */
+
+
+  /* dreams start */
+
+    .giving-best-section {
+  background-image: url('/public/Section.png'); /* Use your image path */
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+ 
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+}
+
+.content {
+  color: white;
+  max-width: 789px;
+}
+
+.content h1 {
+  font-size: 36px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.content p {
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.content button {
+  background-color: #e50914;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  transition: background 0.3s ease;
+}
+
+.content button:hover {
+  background-color: #c40812;
+}
+
+  /* dreams end */
+
+/* latest news start */
+
+.latest-news-section {
+  padding: 0 40px;
+  font-family: 'Poppins', sans-serif;
+  padding-top: 40px;
+}
+
+.latest-news-section h2 {
+  font-size: 24px;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+.news-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.news-card {
+  width: calc(33.333% - 13.33px);
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); */
+}
+
+.news-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 500px;
+ 
+}
+
+.news-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #e5f6d0;
+  color: #333;
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.news-text {
+  font-size: 20px;
+  color: #222;
+  line-height: 1.6;
+  
+}
+/* latest news end */
+
+/*  Clients start  */
+
+.clients-section {
+  padding: 0 40px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.clients-section h3 {
+  font-size: 24px;
+  margin-bottom: 30px;
+  font-weight: 500;
+
+}
+
+.clients-logos {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  align-items: center;
+
+}
+
+.client-logo img {
+  width: 100%;
+  /* max-width: 292px; */
+  height: 84px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+  padding: 40px 0;
+}
+
+.client-logo img:hover {
+  transform: scale(1.05);
+}
+
+/*  Clients end  */
+
+/* footer start */
+.footer {
+  width: 100%;
+  background-color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 40px;
+  flex-wrap: wrap;
+}
+
+/* LEFT SECTION */
+.footer-left {
+  flex: 1;
+  min-width: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-logo {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.footer-uae {
+  width: 80px;
+}
+
+.footer-label {
+  font-size: 12px;
+  margin-top: 5px;
+  color: #555;
+}
+
+/* CENTER SECTION */
+.footer-center {
+  flex: 2;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  min-width: 280px;
+  gap: 40px;
+}
+
+.footer-menu h4,
+.footer-location h4 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.footer-menu ul,
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.footer-location p {
+  font-size: 14px;
+  margin-bottom: 10px;
+  max-width: 300px;
+}
+
+.footer-social img {
+  width: 20px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/* RIGHT SECTION */
+.footer-right {
+  flex: 1;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.footer-btn {
+  background-color: #f5f5f5;
+  border: none;
+  padding: 8px 16px;
+  font-size: 13px;
+  cursor: pointer;
+  width: 160px;
+  text-align: center;
+}
+
+.footer-btn-red {
+  background-color: #e50914;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  width: 160px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.cmec-logo {
+  width: 60px;
+  margin-top: 10px;
+}
+
+.back-to-top {
+  font-size: 11px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+/* the bakkah letters part */
+
+.footer-bakkah-bg {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 40px;
+  gap: 10px;
+  min-height: 300px;
+  background-image: url('/public/Group.png');
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+}
+
+
+.footer-bakkah-bg img {
+  height: 100px;
+  object-fit: contain;
+  
+}
+
+/* Copyright Section */
+.footer-bottom {
+  background-color: #e50914;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 40px;
+  font-size: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-bottom a {
+  color: white;
+  text-decoration: underline;
+  margin: 0 5px;
+}
+
+/* footer end */
+
+hr{
+  margin: 0 40px;
+}
+
+/* styling for page not found */
+
+.notfound-wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f9f9f9;
+  font-family: 'Poppins', sans-serif;
+  padding: 20px;
+  text-align: center;
+}
+
+.notfound-content h1 {
+  font-size: 120px;
+  margin: 0;
+  color: #e50914;
+}
+
+.notfound-content p {
+  font-size: 18px;
+  margin: 20px 0;
+  color: #555;
+}
+
+.notfound-btn {
+  background-color: #e50914;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-top: 10px;
 }
