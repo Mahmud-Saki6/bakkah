@@ -873,3 +873,101 @@ hr{
   display: inline-block;
   margin-top: 10px;
 }
+
+
+/* Division_Holding Start */
+
+.Core-title h2{
+ text-align: center;
+ font-weight: 300;
+ font-size: 40px;
+ text-transform:uppercase;
+}
+
+/* Division_Holding End */
+
+.core-contents{
+  display: flex;
+  justify-content: space-between;
+  max-width: 1289.63px;
+  margin: 0 auto;
+}
+
+.core-contents h2{
+  text-align: left;
+  text-transform:uppercase;
+}
+
+
+.bullet-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.core-lists{
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-start;
+ align-items: flex-start;
+}
+
+/* division-card start */
+
+.division-card-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+
+  padding: 40px;
+  font-family: 'Poppins', sans-serif;
+   max-width: 1289.63px;
+   margin: 0 auto;
+}
+
+.division-card {
+  width: 383.61px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  text-align: left;
+  transition: transform 0.3s;
+}
+
+.division-card:hover {
+  transform: translateY(-5px);
+}
+
+.division-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.division-card h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.features {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.location {
+  padding-left: 20px;
+  font-size: 14px;
+  color: #333;
+  list-style: disc;
+}
+
+/* division-card end */

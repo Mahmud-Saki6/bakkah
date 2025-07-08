@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function notfound() {
+function NotFound() {
   return (
     <div className="notfound-wrapper">
       <div className="notfound-content">
@@ -15,4 +15,4 @@ function notfound() {
   );
 }
 
-export default notfound;
+export default NotFound;
