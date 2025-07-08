@@ -59,7 +59,7 @@ body {
   padding: 12px 30px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
   background-color: white;
-  font-family: Arial, sans-serif;
+  
 }
 
 .header__logo {
@@ -131,6 +131,7 @@ body {
   font-weight: 500;
   cursor: pointer;
   transition: background-color 0.2s ease;
+  font-family: 'Poppins', sans-serif;
 }
 
 .contact-btn:hover {
@@ -193,7 +194,7 @@ height: 18px;
   border: none;
   border-radius: 12px;
   font-size: 18px;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Poppins', sans-serif;
   cursor: pointer;
   transition: background-color 0.1s ease, color 0.1s ease;
   overflow: visible;
@@ -295,6 +296,7 @@ height: 18px;
   border-radius: 6px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  font-family: 'Poppins', sans-serif;
 }
 
 .service-button:hover {
@@ -759,8 +761,9 @@ height: 18px;
   padding: 8px 16px;
   font-size: 13px;
   cursor: pointer;
-  width: 160px;
+  width: 170px;
   text-align: center;
+  font-family: 'Poppins', sans-serif;
 }
 
 .footer-btn-red {
@@ -770,9 +773,10 @@ height: 18px;
   padding: 10px 16px;
   font-size: 14px;
   cursor: pointer;
-  width: 160px;
+  width: 170px;
   text-align: center;
-  font-weight: 500;
+  font-weight: 300;
+  font-family: 'Poppins', sans-serif;
 }
 
 .cmec-logo {
