@@ -13,9 +13,9 @@ function Headers() {
           Home
         </Link>
         <Link to="/Division-Holding">Our Team</Link>
-        <Link>Our Story</Link>
-        <Link>Our Concern</Link>
-        <Link>Media</Link>
+        <Link to="/DivisionHealthCare">Our Story</Link>
+        <Link to="/DivisionTrade">Our Concern</Link>
+        <Link to="/DivisionPower">Media</Link>
       </nav>
 
       <div className="header__right">

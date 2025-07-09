@@ -46,7 +46,26 @@ function Division_Holding() {
         <h2>On Going</h2>
       </div>
 
-      <DivisionCard></DivisionCard>
+      <div className="division-card-container">
+        <DivisionCard
+          title="LIZAS CASTLE"
+          image="/card1.png"
+          features={`Modern Architecture Walk-in Closets Dry Kitchen 24 Hour Security RFID & Video Intercom Internet Connection Cable TV Connection Rooftop BBQ Station Rooftop Lounge Community Space Generator Service`}
+          location={`Plot 004, Road 509, Sector 16, Jolshiri Abashon, Dhaka`}
+        />
+        <DivisionCard
+          title="SHUMIS VILLA"
+          image="/card2.png"
+          features={`Modern Architecture Walk-in Closets 24 Hour Security RFID & Video Intercom Internet Connection Cable TV Connection Rooftop Garden Rooftop Lounge Community Space Generator Service`}
+          location={`Plot 004, Road 503, Sector 16, Jolshiri Abashon, Dhaka`}
+        />
+        <DivisionCard
+          title="PARK VIEW"
+          image="/card3.png"
+          features={`Modern Architecture Walk-in Closets 24 Hour Security Mini Swimming Pool Per Unit Garden Space Per Unit Central Prayer Room Common Laundry Space Common Swimming Pool & Jacuzzi Gymnasium Rooftop Lounge Generator Service`}
+          location={`Plot 001, Road 301-A, Sector 17, Purbachal New Town`}
+        />
+      </div>
 
       {/* On going end */}
 
@@ -54,7 +73,17 @@ function Division_Holding() {
       <div className="Core-title">
         <h2>Upcoming</h2>
       </div>
-      <DivisionCard></DivisionCard>
+      <div className="division-card4-container">
+        <div className="division-card4">
+          <DivisionCard
+            title="Park View"
+            image="/card4.png"
+            features={`Modern Architecture Walk-in Closets Dry Kitchen 24 Hour Security RFID & Video Intercom Internet Connection Cable TV Connection Rooftop BBQ Station Rooftop Lounge Community Space Generator Service`}
+            location={`Plot 004, Road 509, Sector 16, Jolshiri Abashon, Dhaka`}
+          />
+        </div>
+      </div>
+
       {/* Upcoming end */}
 
       {/* footer */}
