@@ -477,7 +477,7 @@ height: 18px;
   transition: all 0.3s ease-in-out;
 }
 
-.division-card {
+.our-division-card {
   flex: 1;
   min-width: 30%;
   background: #fff;
@@ -508,10 +508,11 @@ height: 18px;
 }
 
 .read-more {
-  padding: 0 10px 10px 10px;
+  /* padding: 0 10px 10px 10px; */
   color: red;
   font-size: 14px;
   cursor: pointer;
+  text-align: left;
 }
 
   /* our division end */
@@ -931,7 +932,7 @@ hr{
 
 .division-card {
   width: 383.61px;
-  /* border: 1px solid #eee; */
+  border: 1px solid #eee;
   border-radius: 10px;
   background-color: white;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
@@ -996,3 +997,209 @@ hr{
   font-family: 'Poppins', sans-serif;
 }
 /* division-card end */
+
+
+/* home page mobile responsive */
+
+@media (min-width: 320px) and (max-width: 750px) {
+
+/* header section start */
+
+/* header section end */
+}
+
+
+/* header drop down */
+
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  cursor: pointer;
+  /* padding: 10px; */
+  font-size: 16px;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  padding: 10px 0;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  z-index: 10;
+  min-width: 200px;
+  flex-direction: column;
+ 
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 8px 20px;
+  text-decoration: none;
+  color: #333;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f0f0f0;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: flex;
+}
+
+/* TeamCard start*/
+
+.team-cards{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.team-card {
+  width: 383.61px;
+  /* border: 1px solid #eee; */
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  text-align: center;
+  transition: transform 0.3s;
+  font-family: 'Poppins', sans-serif;
+}
+
+.team-img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.team-contents {
+  padding: 0 20px;
+}
+
+.team-name {
+  margin: 15px 0 5px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.team-role {
+  font-weight: 500;
+  font-size: 15px;
+  margin-bottom: 10px;
+  color: #E53935;
+}
+
+.team-role.chairman {
+  color: #E53935;
+}
+
+.team-role.managing-director {
+  color: #F4511E;
+}
+
+.team-role.director {
+  color: #C2185B;
+}
+
+.details-btn {
+  margin: 10px 0 20px;
+  padding: 8px 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.details-btn.active {
+  background-color: #E53935;
+  color: #fff;
+  border: 1px solid #E53935;
+}
+
+.team-details {
+  background-color: #fff;
+  color: #222;
+  padding: 15px;
+  font-size: 14px;
+  text-align: left;
+  line-height: 1.6;
+  border-top: 1px solid #eee;
+}
+
+/* TeamCard end */
+
+.about{
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.about-content p{
+  margin: 0;
+}
+
+.aboutBorder{
+width: 600px; /* You can adjust the width as needed */
+  height: 2px;
+  background-color: #000; /* or whatever color you want */
+  border: none;
+  margin-left: auto;
+  margin-top: 359px;
+}
+
+.story{
+  margin-top: 300px;
+  text-align: end;
+  font-size: 46px;
+  /* border-bottom: 2px solid #000000; */
+}
+
+.story-border{
+  
+}
+
+.vision-mission-values {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  font-family: 'Poppins', sans-serif;
+  flex-wrap: wrap;
+}
+
+.vision-mission-values .card {
+  flex: 1;
+  min-width: 280px;
+  background-image: url('/public/vision.png'); /* optional if you have a pattern background */
+  background-color: #f4f6f8;
+  background-size: cover;
+  border-radius: 10px;
+  padding: 30px 25px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.vision-mission-values .card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 15px;
+}
+
+.vision-mission-values .card p {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.6;
+}

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Headers() {
   return (
-    <header className="header ">
+    <header className="header">
       <div className="header__logo">
         <img src="/logo.png" alt="Bakkah Logo" />
       </div>
@@ -12,10 +12,29 @@ function Headers() {
         <Link to="/" className="active" style={{ cursor: "pointer" }}>
           Home
         </Link>
-        <Link to="/Division-Holding">Our Team</Link>
-        <Link to="/DivisionHealthCare">Our Story</Link>
-        <Link to="/DivisionTrade">Our Concern</Link>
-        <Link to="/DivisionPower">Media</Link>
+
+        <div className="dropdown">
+          <p className="dropdown-toggle">Our Team</p>
+          <div className="dropdown-menu">
+            <Link to="/BoardDirectors">Board of Directors</Link>
+            <Link to="/Management">Management</Link>
+          </div>
+        </div>
+
+        <Link to="/concern">Our Story</Link>
+
+        <div className="dropdown">
+          <p className="dropdown-toggle">Our Concern</p>
+          <div className="dropdown-menu">
+            <Link to="/Division-Holding">Bakkah Holdings Ltd</Link>
+            <Link to="/DivisionHealthCare">Bakkah Health Care</Link>
+            <Link to="/DivisionTrade">Bakkah Trade & Technology Ltd</Link>
+            <Link to="/DivisionPower">Bakkah Power Energy & Mineral</Link>
+            <Link to="/DivisionAviation">Bakkah Aviation</Link>
+          </div>
+        </div>
+
+        <Link to="/concern">Media</Link>
       </nav>
 
       <div className="header__right">

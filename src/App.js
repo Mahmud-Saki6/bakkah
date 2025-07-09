@@ -8,6 +8,9 @@ import DivisionHealthCare from "./pages/DivisionHealthCare";
 import DivisionTrade from "./pages/DivisionTrade";
 import DivisionPower from "./pages/DivisionPower";
 import DivisionAviation from "./pages/DivisionAviation";
+import BoardDirectors from "./pages/BoardDirectors";
+import Management from "./pages/Management";
+import AboutUs from "./pages/AboutUs";
 
 function App() {
   return (
@@ -21,6 +24,9 @@ function App() {
           <Route path="/divisionTrade" element={<DivisionTrade />} />
           <Route path="/divisionPower" element={<DivisionPower />} />
           <Route path="/divisionAviation" element={<DivisionAviation />} />
+          <Route path="/boardDirectors" element={<BoardDirectors />} />
+          <Route path="/management" element={<Management />} />
+          <Route path="/aboutUs" element={<AboutUs />} />
         </Routes>
       </Router>
     </div>

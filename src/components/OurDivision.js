@@ -69,7 +69,7 @@ const OurDivision = () => {
 
       <div className="our-division-slider">
         {visibleDivisions.map((div, i) => (
-          <div key={i} className="division-card">
+          <div key={i} className="our-division-card">
             {/* <img src={div.logo} alt={div.title} className="division-logo" /> */}
             <img src={div.image} alt={div.title} className="division-img" />
             <p className="division-title">{div.title}</p>

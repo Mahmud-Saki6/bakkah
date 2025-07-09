@@ -77,7 +77,7 @@ const Footer = () => {
       <div className="footer-bottom">
         <p>
           Copyright © 2025 BAKKAH. All Rights Reserved |
-          <a href="#"> Terms of Use </a> |<a href="#"> Privacy Policy </a>
+          {/* <a href="#"> Terms of Use </a> |<a href="#"> Privacy Policy </a> */}
         </p>
         <span>
           Design & Develop by <strong>ETHER TECH</strong>
