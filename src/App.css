@@ -1168,38 +1168,58 @@ width: 600px; /* You can adjust the width as needed */
   /* border-bottom: 2px solid #000000; */
 }
 
-.story-border{
-  
+.contactAdd{
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 30px 0;
 }
 
-.vision-mission-values {
+/* contact section */
+
+.contact-section {
   display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  font-family: 'Poppins', sans-serif;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 40px;
   flex-wrap: wrap;
 }
 
-.vision-mission-values .card {
+.map-wrapper img {
+  width: 550.31px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
   flex: 1;
-  min-width: 280px;
-  background-image: url('/public/vision.png'); /* optional if you have a pattern background */
-  background-color: #f4f6f8;
-  background-size: cover;
-  border-radius: 10px;
-  padding: 30px 25px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  min-width: 300px;
+  margin-top: 216px;
 }
 
-.vision-mission-values .card h3 {
-  font-size: 18px;
-  font-weight: 600;
-  color: #111;
-  margin-bottom: 15px;
-}
-
-.vision-mission-values .card p {
+.contact-form input,
+.contact-form textarea {
+  padding: 10px 15px;
   font-size: 14px;
-  color: #333;
-  line-height: 1.6;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  outline: none;
+}
+
+.contact-form button {
+  padding: 12px 20px;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #c40000;
 }

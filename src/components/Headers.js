@@ -34,12 +34,14 @@ function Headers() {
           </div>
         </div>
 
-        <Link to="/concern">Media</Link>
+        <Link to="/Media">Media</Link>
       </nav>
 
       <div className="header__right">
         <img src="/search.png" alt="Bakkah Logo" />
-        <button className="contact-btn">Contact us</button>
+        <Link to="/Contact">
+          <button className="contact-btn">Contact us</button>
+        </Link>
       </div>
     </header>
   );

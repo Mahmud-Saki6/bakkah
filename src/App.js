@@ -11,6 +11,8 @@ import DivisionAviation from "./pages/DivisionAviation";
 import BoardDirectors from "./pages/BoardDirectors";
 import Management from "./pages/Management";
 import AboutUs from "./pages/AboutUs";
+import Media from "./pages/Media";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
@@ -27,6 +29,8 @@ function App() {
           <Route path="/boardDirectors" element={<BoardDirectors />} />
           <Route path="/management" element={<Management />} />
           <Route path="/aboutUs" element={<AboutUs />} />
+          <Route path="/media" element={<Media />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </Router>
     </div>

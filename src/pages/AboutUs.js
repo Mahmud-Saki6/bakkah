@@ -49,33 +49,10 @@ function AboutUs() {
       </div>
 
       <div className="division-card-container">
-        <div className="vision-mission-values">
-          <div className="card">
-            <h3>OUR VISION</h3>
-            <p>
-              A global leader transforming industries with innovation,
-              sustainability, and unmatched excellence.
-            </p>
-          </div>
-          <div className="card">
-            <h3>OUR MISSION</h3>
-            <p>
-              To drive sustainable growth and deliver innovative, high-quality
-              solutions across our diverse sectors — real estate, healthcare,
-              aviation, energy, minerals, trade, and technology — while creating
-              long-term value for our stakeholders, partners, and communities.
-            </p>
-          </div>
-          <div className="card">
-            <h3>OUR VALUES</h3>
-            <p>
-              Diversify and expand operations across emerging and high-potential
-              markets. Innovate continuously by adopting advanced technologies
-              and industry best practices. Ensure operational excellence through
-              efficient project execution and quality assurance. Empower people
-              by building a culture of professionalism, growth, and leadership.
-            </p>
-          </div>
+        <div className="division-card4">
+          <img src="/ab1.png" width={400} />
+          <img src="/ab2.png" width={400} />
+          <img src="/ab3.png" width={400} />
         </div>
       </div>
 
