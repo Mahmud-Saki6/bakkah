@@ -68,6 +68,9 @@ function Headers() {
         <Link to="/Media" onClick={() => setMenuOpen(false)}>
           Media
         </Link>
+        <Link to="/Contact" onClick={() => setMenuOpen(false)}>
+          Contact Us
+        </Link>
       </nav>
 
       {/* Search + Contact Button */}
