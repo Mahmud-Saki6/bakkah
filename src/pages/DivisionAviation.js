@@ -7,8 +7,8 @@ function DivisionAviation() {
   return (
     <div>
       <Headers></Headers>
-      <div className="">
-        <img src="aviationH.png" width={`100%`} alt="Hero Image " />
+      <div className="all-hero">
+        <img src="aviationH.png" />
       </div>
       {/* Core Business start */}
       <div className="Core-title">

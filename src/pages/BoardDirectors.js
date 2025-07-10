@@ -8,8 +8,8 @@ function BoardDirectors() {
   return (
     <div>
       <Headers></Headers>
-      <div className="">
-        <img src="director.png" width={`100%`} alt="Hero Image " />
+      <div className="all-hero">
+        <img src="director.png" alt="Hero Image " />
       </div>
       {/* Core Business start */}
       <div className="Core-title">

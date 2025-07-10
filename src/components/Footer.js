@@ -1,6 +1,8 @@
 import React from "react";
+import { Link, useNavigate } from "react-router-dom";
 
 const Footer = () => {
+  const navigate = useNavigate();
   return (
     <footer className="footer">
       <div className="footer-wrapper">
@@ -10,6 +12,8 @@ const Footer = () => {
             src="/footer-bakkah-logo.png"
             alt="Bakkah Logo"
             className="footer-logo"
+            onClick={() => navigate("/")}
+            style={{ cursor: "pointer" }}
           />
           <img
             src="/footer-uae.png"
@@ -24,20 +28,88 @@ const Footer = () => {
           <div className="footer-menu">
             <h4>MENU</h4>
             <ul>
-              <li>Home</li>
-              <li>Media</li>
-              <li>Our Story</li>
-              <li>Contact</li>
+              <li>
+                {" "}
+                <Link
+                  to="/"
+                  style={{
+                    cursor: "pointer",
+                    textDecoration: "none",
+                    color: "black",
+                  }}
+                >
+                  Home
+                </Link>
+              </li>
+              <li
+                onClick={() => navigate("/Media")}
+                style={{
+                  cursor: "pointer",
+                }}
+              >
+                Media
+              </li>
+              <li
+                onClick={() => navigate("/AboutUs")}
+                style={{
+                  cursor: "pointer",
+                }}
+              >
+                Our Story
+              </li>
+              <li
+                onClick={() => navigate("/Contact")}
+                style={{
+                  cursor: "pointer",
+                }}
+              >
+                Contact
+              </li>
             </ul>
           </div>
 
           <div className="footer-links">
             <ul>
-              <li>Bakkah Holdings</li>
-              <li>Bakkah Health Care</li>
-              <li>Defense & Commodity Trade Ltd</li>
-              <li>Bakkah Power Energy & Mineral</li>
-              <li>Bakkah Aviation</li>
+              <li
+                onClick={() => navigate("/Division-Holding")}
+                style={{
+                  cursor: "pointer",
+                }}
+              >
+                Bakkah Holdings
+              </li>
+              <li
+                onClick={() => navigate("/DivisionHealthCare")}
+                style={{
+                  cursor: "pointer",
+                }}
+              >
+                Bakkah Health Care
+              </li>
+              <li
+                onClick={() => navigate("/DivisionTrade")}
+                style={{
+                  cursor: "pointer",
+                }}
+              >
+                Defense & Commodity Trade Ltd
+              </li>
+              <li
+                onClick={() => navigate("/DivisionPower")}
+                style={{
+                  cursor: "pointer",
+                }}
+              >
+                Bakkah Power Energy & Mineral
+              </li>
+              <li
+                onClick={() => navigate("/DivisionAviation")}
+                style={{
+                  cursor: "pointer",
+                }}
+              >
+                Bakkah Aviation
+              </li>
             </ul>
           </div>
 
@@ -61,7 +133,15 @@ const Footer = () => {
 
         {/* === RIGHT SECTION === */}
         <div className="footer-right">
-          <button className="footer-btn">Contact us</button>
+          <button
+            className="footer-btn"
+            onClick={() => navigate("/Contact")}
+            style={{
+              cursor: "pointer",
+            }}
+          >
+            Contact us
+          </button>
           <button className="footer-btn">Work for us</button>
           <button className="footer-btn-red">Collaborate with us</button>
           <img src="/footer-cmec.png" alt="CMEC Logo" className="cmec-logo" />

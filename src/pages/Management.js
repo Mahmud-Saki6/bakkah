@@ -8,8 +8,8 @@ function Management() {
   return (
     <div>
       <Headers></Headers>
-      <div className="">
-        <img src="director.png" width={`100%`} alt="Hero Image " />
+      <div className="all-hero">
+        <img src="director.png" />
       </div>
       {/* Core Business start */}
       <div className="Core-title">

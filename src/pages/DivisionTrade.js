@@ -7,8 +7,8 @@ function DivisionTrade() {
   return (
     <div>
       <Headers></Headers>
-      <div className="">
-        <img src="tradeH.png" width={`100%`} alt="Hero Image " />
+      <div className="all-hero">
+        <img src="tradeH.png" />
       </div>
       {/* Core Business start */}
       <div className="Core-title">

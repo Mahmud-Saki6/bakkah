@@ -150,15 +150,25 @@ height: 18px;
 .hero-section {
   position: relative;
   width: 100%;
-  height: 100vh;
+  
   overflow: hidden;
 }
 
 .hero-video {
   width: 100%;
-  height: 100%;
+  height: 75%;
   object-fit: cover;
 }
+
+/* allHero */
+
+.all-hero img {
+  width: 100%;
+  height: 580px;
+  object-fit: cover;
+}
+
+
 
 .hero-overlay {
   position: absolute;
@@ -169,7 +179,7 @@ height: 18px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  padding-bottom: 50px;
+  /* padding-bottom: 100px; */
   background: rgba(0, 0, 0, 0.3);
   overflow: visible;
 }
@@ -179,7 +189,7 @@ height: 18px;
   gap: 24px;
   justify-content: center;
   align-items: center;
-  margin-bottom: 60px; /* increased for visibility */
+  margin-bottom: 60px; 
   overflow: visible;
   width: 100%;
 }
@@ -608,7 +618,7 @@ height: 18px;
 .news-image-wrapper {
   position: relative;
   width: 100%;
-  height: 500px;
+  /* height: 500px; */
  
 }
 
@@ -805,11 +815,11 @@ height: 18px;
   align-items: center;
   margin: 20px 40px;
   gap: 10px;
-  min-height: 300px;
+  min-height: 450px;
   background-image: url('/public/Group.png');
   background-repeat: no-repeat;
   background-position: bottom center;
-  background-size: cover;
+  background-size: contain;
 }
 
 
@@ -1222,4 +1232,13 @@ width: 600px; /* You can adjust the width as needed */
 
 .contact-form button:hover {
   background-color: #c40000;
+}
+
+
+/* slider */
+
+/* hero images */
+
+.hero-video source{
+  height: 300px;
 }

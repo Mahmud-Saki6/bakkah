@@ -7,8 +7,8 @@ function DivisionHealthCare() {
   return (
     <div>
       <Headers></Headers>
-      <div className="">
-        <img src="divisionhealthhero.png" width={`100%`} alt="Hero Image " />
+      <div className="all-hero">
+        <img src="divisionhealthhero.png" />
       </div>
       {/* Core Business start */}
       <div className="Core-title">

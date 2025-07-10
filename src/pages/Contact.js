@@ -7,8 +7,8 @@ function Contact() {
   return (
     <div>
       <Headers></Headers>
-      <div className="">
-        <img src="contact.png" width={`100%`} alt="Hero Image " />
+      <div className="all-hero">
+        <img src="contact.png" />
       </div>
       {/* Core Business start */}
 

@@ -21,10 +21,10 @@ function Headers() {
           </div>
         </div>
 
-        <Link to="/concern">Our Story</Link>
+        <Link to="/AboutUs">Our Story</Link>
 
         <div className="dropdown">
-          <p className="dropdown-toggle">Our Concern</p>
+          <p className="dropdown-toggle">Our Concern </p>
           <div className="dropdown-menu">
             <Link to="/Division-Holding">Bakkah Holdings Ltd</Link>
             <Link to="/DivisionHealthCare">Bakkah Health Care</Link>

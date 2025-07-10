@@ -8,8 +8,8 @@ function AboutUs() {
   return (
     <div>
       <Headers />
-      <div>
-        <img src="about.png" width="100%" alt="Hero Image" />
+      <div className="all-hero">
+        <img src="about.png" alt="Hero Image" />
       </div>
 
       {/* About Content Section */}

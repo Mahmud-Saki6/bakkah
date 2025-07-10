@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import Headers from "../components/Headers";
 import OurDivision from "../components/OurDivision";
 import LatestNews from "../components/LatestNews";
@@ -14,6 +15,7 @@ const sectors = [
 ];
 
 function Home() {
+  const navigate = useNavigate();
   const [active, setActive] = useState("Power & Energy");
   return (
     <div>
@@ -52,7 +54,15 @@ function Home() {
           worldwide, using cutting-edge Building Information Modeling technology
           to deliver innovative and efficient solutions.
         </p>
-        <button className="service-button">Collaborate with us</button>
+        <button
+          className="service-button"
+          onClick={() => navigate("/Contact")}
+          style={{
+            cursor: "pointer",
+          }}
+        >
+          Collaborate with us
+        </button>
       </section>
 
       {/* Engineering Services end */}
@@ -120,7 +130,10 @@ function Home() {
       <hr></hr>
       <div className="about-text">
         <h2>8 Industries, 20+ Years </h2>
-        <a href="">
+        <a
+          onClick={() => navigate("/AboutUs")}
+          style={{ cursor: "pointer", textDecoration: "none" }}
+        >
           About Us <span>{">"}</span>
         </a>
       </div>

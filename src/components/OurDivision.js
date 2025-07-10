@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const divisions = [
   {
@@ -30,21 +30,36 @@ const divisions = [
 const OurDivision = () => {
   const [index, setIndex] = useState(0);
   const itemsPerPage = 3;
+  const totalItems = divisions.length;
+
+  const getVisibleDivisions = () => {
+    const result = [];
+    for (let i = 0; i < itemsPerPage; i++) {
+      const currentIndex = (index + i) % totalItems;
+      result.push(divisions[currentIndex]);
+    }
+    return result;
+  };
 
   const handleNext = () => {
-    if (index + itemsPerPage < divisions.length) {
-      setIndex(index + itemsPerPage);
-    }
+    setIndex((prevIndex) => (prevIndex + itemsPerPage) % totalItems);
   };
 
   const handlePrev = () => {
-    if (index - itemsPerPage >= 0) {
-      setIndex(index - itemsPerPage);
-    }
+    setIndex(
+      (prevIndex) => (prevIndex - itemsPerPage + totalItems) % totalItems
+    );
   };
 
-  const visibleDivisions = divisions.slice(index, index + itemsPerPage);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      handleNext();
+    }, 3000);
 
+    return () => clearInterval(interval);
+  }, []);
+
+  const visibleDivisions = getVisibleDivisions();
   return (
     <div className="our-division-wrapper">
       <div className="our-division-header">
