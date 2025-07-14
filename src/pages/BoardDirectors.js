@@ -20,7 +20,7 @@ function BoardDirectors() {
 
       {/* TeamCard start */}
       <div className="division-card-container">
-        <div className="division-card4">
+        <div className="division-card4 ">
           <TeamCard
             name="K M Mozibul Hoque"
             role="Chairman"

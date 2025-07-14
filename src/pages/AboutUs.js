@@ -14,7 +14,7 @@ function AboutUs() {
 
       {/* About Content Section */}
       <div className="division-card-container">
-        <div className="division-card4 about">
+        <div className=" about">
           <div>
             <img src="abc.png" width={619} alt="About Visual" />
           </div>
@@ -48,7 +48,7 @@ function AboutUs() {
         </div>
       </div>
 
-      <div className="division-card-container">
+      <div className="division-card-container textcard">
         <div className="division-card4">
           <img src="/ab1.png" width={400} />
           <img src="/ab2.png" width={400} />

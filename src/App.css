@@ -908,6 +908,7 @@ hr{
 .core-contents{
   display: flex;
   justify-content: space-between;
+  width: 80%;
   max-width: 1289.63px;
   margin: 0 auto;
 }
@@ -940,6 +941,7 @@ hr{
   justify-content: center;
   padding: 40px;
   font-family: 'Poppins', sans-serif;
+  width: 90%;
   max-width: 1289.63px;
   margin: 0 auto;
 }
@@ -998,8 +1000,7 @@ hr{
 .division-card4-container{
    display: flex;
   justify-content: flex-start;
-  max-width: 1270px;
-  margin: 0 auto;
+ 
 
 }
 
@@ -1009,6 +1010,8 @@ hr{
   padding: 40px 0;
    gap: 20px;
   font-family: 'Poppins', sans-serif;
+   max-width: 1270px;
+  margin: 0 auto;
 }
 /* division-card end */
 
@@ -1534,17 +1537,6 @@ width: 600px; /* You can adjust the width as needed */
     display: none; /* optional: hide scrollbar on mobile */
   }
 
-  .clients-logos {
-  display: flex;
-  flex-wrap: wrap;
-  /* justify-content: space-between; */
-  gap: 10px;
-  align-items: center;
-
-}
-.client-logo img{
-  padding: 0 !important;
-}
 
 .footer-menu{
  
@@ -1583,6 +1575,85 @@ width: 600px; /* You can adjust the width as needed */
   line-height: 1.6;
   color: #333;
   padding: 0 20px;
+}
+
+.clients-logos {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 16px;
+    /* padding-bottom: 10px; */
+  }
+
+  .client-logo {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    width: 140px;
+  }
+
+  .clients-logos::-webkit-scrollbar {
+    display: none;
+  }
+
+  .client-logo img{
+    padding: 0;
+    height: 100%;
+  }
+
+  .division-card4 {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 16px;
+    padding-bottom: 10px;
+  }
+
+  .division-card4 > * {
+    flex: 0 0 100%;
+    scroll-snap-align: center;
+    max-width: 80%;
+    margin: 0 auto;
+    
+  }
+
+  .division-card4::-webkit-scrollbar {
+    display: none;
+  }
+ .core-contents{
+  display: flex;
+  flex-direction: column;
+ }
+.about{
+   display: flex;
+  flex-direction: column;
+}
+.about img{
+  width: 100%;
+}
+
+.story{
+  margin-top: 20px;
+  text-align: center;
+  font-size: 46px;
+  padding: 0 !important;
+  /* border-bottom: 2px solid #000000; */
+}
+
+.division-card-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 !important;
+}
+.division-card-container img{
+  width: 100%;
+}
+.all-hero img{
+  width: 100% !important;
+
 }
   
 }
