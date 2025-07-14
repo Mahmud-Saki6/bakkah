@@ -1657,6 +1657,15 @@ width: 600px; /* You can adjust the width as needed */
   width: 100% !important;
 
 }
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  flex: 1;
+  width: 100%;
+  min-width: 300px;
+  margin-top: 0px;
+}
   
 }
 
