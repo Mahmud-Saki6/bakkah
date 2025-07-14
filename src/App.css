@@ -1000,6 +1000,7 @@ hr{
 .division-card4-container{
    display: flex;
   justify-content: flex-start;
+  
  
 
 }
@@ -1010,6 +1011,7 @@ hr{
   padding: 40px 0;
    gap: 20px;
   font-family: 'Poppins', sans-serif;
+  width: 90%;
    max-width: 1270px;
   margin: 0 auto;
 }
