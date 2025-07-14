@@ -1714,6 +1714,10 @@ width: 600px; /* You can adjust the width as needed */
   min-width: 300px;
   margin-top: 0px;
 }
+
+.footer-location{
+  width: 100%;
+}
   
 }
 
