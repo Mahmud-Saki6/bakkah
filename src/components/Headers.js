@@ -50,6 +50,9 @@ function Headers() {
         </div>
 
         <Link to="/Media">Media</Link>
+        <Link to="/Contact">
+          <button className="contact">Contact us</button>
+        </Link>
       </nav>
 
       {/* Search + Contact Button */}

@@ -1325,6 +1325,19 @@ width: 600px; /* You can adjust the width as needed */
   font-family: 'Poppins', sans-serif;
 }
 
+  .contact {
+    background-color: #e12222;
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  font-family: 'Poppins', sans-serif;
+  display: none;
+  }
+
 .contact-btn:hover {
   background-color: #c61818;
 }
@@ -1519,8 +1532,21 @@ width: 600px; /* You can adjust the width as needed */
 
   /* Contact button */
   .contact-btn {
-    padding: 8px 12px;
+    padding: 8px 6px;
     font-size: 14px;
+    display: none;
+  }
+  .contact {
+    background-color: #e12222;
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  font-family: 'Poppins', sans-serif;
+  display: block;
   }
 
   /* Logo */
