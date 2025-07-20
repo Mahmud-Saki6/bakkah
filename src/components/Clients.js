@@ -26,7 +26,7 @@ const clients = [
 const Clients = () => {
   return (
     <div className="clients-section">
-      <h3>Clients</h3>
+      <h3>Our Concern</h3>
       <div className="clients-logos">
         {clients.map((client, index) => (
           <div className="client-logo" key={index}>
