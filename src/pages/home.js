@@ -114,13 +114,13 @@ function Home() {
           </div>
         </div>
 
-        <div className="sectors-right">
+        <div className="sectors-right ">
           <h1>
             Strength in Sectors,
             <br />
             United by Vision
           </h1>
-          <p className="description">
+          <p className="description ">
             “Bakkah Holdings is a dynamic conglomerate specializing in diverse
             sectors including real estate, healthcare, aviation, energy, power
             and minerals, trade, and technology.”
@@ -166,7 +166,7 @@ function Home() {
         <div className="overlay">
           <div className="content">
             <h1>Giving The Best For Dreams</h1>
-            <p>
+            <p className="text-alignment">
               Sponsored having diversified experience in the field of Civil
               Engineering Construction (Home & Abroad), Manufacturing in the
               area of Jute, Plastic, Lamination, Real Estate, Food & Beverage,
@@ -175,7 +175,6 @@ function Home() {
               ICT Technologies, High-tech Park development, Pipeline & Steel
               Fabrication/Erection and many more.
             </p>
-            <button>Read more info</button>
           </div>
         </div>
       </section>

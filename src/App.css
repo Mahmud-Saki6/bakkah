@@ -295,6 +295,7 @@ height: 18px;
   font-weight: 400;
   line-height: 1.6;
   color: #333;
+  text-align: justify;
 }
 
 .service-button {
@@ -416,7 +417,7 @@ height: 18px;
   margin-bottom: 40px;
   width: 100%;
   max-width: 584px;
-  text-align: center;
+  text-align: justify;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1158,6 +1159,7 @@ hr{
 
 .about-content p{
   margin: 0;
+  text-align: justify;
 }
 
 .aboutBorder{
@@ -1169,6 +1171,50 @@ width: 600px; /* You can adjust the width as needed */
   margin-top: 359px;
 }
 
+/* our mission part */
+.about-mission-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 58px;
+ 
+}
+
+.about-card {
+  width: 300px;
+  padding: 30px 20px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.8); /* fallback */
+  color: #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-card h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+ 
+}
+
+.about-card hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin-bottom: 16px;
+}
+
+.about-card {
+  font-size: 14px;
+  text-align: justify;
+  line-height: 1.6;
+}
+
+/* our mission part end*/
+
+
 .story{
   margin-top: 300px;
   text-align: end;
@@ -1177,10 +1223,10 @@ width: 600px; /* You can adjust the width as needed */
 }
 
 .contactAdd{
-  text-align: center;
+  text-align: start;
   font-size: 16px;
   font-weight: bold;
-  padding: 30px 0;
+  
 }
 
 /* contact section */
@@ -1206,7 +1252,8 @@ width: 600px; /* You can adjust the width as needed */
   gap: 15px;
   flex: 1;
   min-width: 300px;
-  margin-top: 216px;
+  margin-top:20px;
+ 
 }
 
 .contact-form input,
@@ -1415,6 +1462,10 @@ width: 600px; /* You can adjust the width as needed */
   transform: translateY(-7px) rotate(-45deg);
 }
 
+.text-alignment{
+  text-align: justify;
+}
+
 /* Mobile styles */
 @media (min-width: 320px) and (max-width: 750px) {
 
@@ -1433,6 +1484,12 @@ width: 600px; /* You can adjust the width as needed */
     top: 50%;
     transform: translateY(-50%);
   }
+
+  .text-alignment{
+    text-align: justify;
+    padding-right: 40px;
+  }
+
 
   /* Main navigation */
   .header__nav {
@@ -1606,7 +1663,7 @@ width: 600px; /* You can adjust the width as needed */
 
   .news-text {
     font-size: 13px;
-    text-align: left;
+    padding: 0;
   }
 
   .news-grid::-webkit-scrollbar {
@@ -1633,15 +1690,18 @@ width: 600px; /* You can adjust the width as needed */
   font-weight: 300;
   color: #000;
   margin-bottom: 24px;
+  text-align: start;
+  padding: 0 40px;
 }
 
 .sectors-right h1 {
   font-size: 50px;
   font-family: 'Poppins', sans-serif;
   font-weight: 300; /* Previously 300 */
-  text-align: center;
+  text-align: start;
   margin-bottom: 20px;
   line-height: 1.2;
+  
 }
 
 .service-description {
@@ -1650,7 +1710,9 @@ width: 600px; /* You can adjust the width as needed */
   font-weight: 400;
   line-height: 1.6;
   color: #333;
-  padding: 0 20px;
+  padding: 0 40px;
+  text-align: justify;
+
 }
 
 .clients-logos {

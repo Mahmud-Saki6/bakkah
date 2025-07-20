@@ -50,9 +50,64 @@ function AboutUs() {
 
       <div className="division-card-container textcard">
         <div className="division-card4">
-          <img src="/ab1.png" width={400} />
-          <img src="/ab2.png" width={400} />
-          <img src="/ab3.png" width={400} />
+          <div className="about-mission-section">
+            <div
+              className="about-card"
+              style={{ backgroundImage: "url(ab1.png)" }}
+            >
+              <h3>OUR VISION</h3>
+              <hr />
+              <p>A global leader transforming industries with:</p>
+              <ul>
+                <li>Innovation</li>
+                <li>Sustainability</li>
+                <li>Unmatched excellence</li>
+              </ul>
+            </div>
+
+            <div
+              className="about-card"
+              style={{ backgroundImage: "url(ab2.png)" }}
+            >
+              <h3>OUR MISSION</h3>
+              <hr />
+              <p>
+                To drive sustainable growth and deliver high-quality solutions
+                across:
+              </p>
+              <ul>
+                <li>Real estate</li>
+                <li>Healthcare</li>
+                <li>Aviation</li>
+                <li>Energy</li>
+                <li>Minerals</li>
+                <li>Trade</li>
+                <li>Technology</li>
+              </ul>
+              <p>
+                While creating long-term value for our stakeholders, partners,
+                and communities.
+              </p>
+            </div>
+
+            <div
+              className="about-card"
+              style={{ backgroundImage: "url(ab3.png)" }}
+            >
+              <h3>OUR VALUES</h3>
+              <hr />
+              <ul>
+                <li>
+                  Diversify and expand operations across high-potential markets
+                </li>
+                <li>Innovate continuously using advanced technologies</li>
+                <li>Ensure operational excellence and quality assurance</li>
+                <li>
+                  Empower people through professionalism, growth, and leadership
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
 

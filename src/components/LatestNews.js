@@ -32,7 +32,7 @@ const LatestNews = () => {
               <img src={item.image} alt="news" className="news-image" />
               {/* <span className="badge">{item.badge}</span> */}
             </div>
-            <p className="news-text">{item.text}</p>
+            <p className="news-text text-alignment">{item.text}</p>
           </div>
         ))}
       </div>

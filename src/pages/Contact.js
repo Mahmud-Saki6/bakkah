@@ -6,42 +6,47 @@ import Footer from "../components/Footer";
 function Contact() {
   return (
     <div>
-      <Headers></Headers>
+      <Headers />
       <div className="all-hero">
-        <img src="contact.png" />
+        <img src="contact.png" alt="Contact Hero" />
       </div>
-      {/* Core Business start */}
 
-      {/* Core Business end */}
-
-      {/* On going start */}
-
+      {/* Contact Title */}
       <div className="Core-title">
         <h2>Contact Us</h2>
       </div>
-      <div className="contactAdd">
-        <p>Erectors House, 11th Floor, 18 Kemal Ataturk</p>
-        <p>Avenue, Banani C/A, Dhaka – 1213, Bangladesh</p>
-      </div>
 
       <div className="division-card-container contact-section">
+        {/* Embedded Google Map */}
         <div className="map-wrapper">
-          <img src="your-map-image.png" width={550.31} alt="Map Location" />
+          <iframe
+            title="Bakkah Tower Map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116822.3599793078!2d90.32146541995863!3d23.793739526095557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7007b8c29d5%3A0xe4a1ea46c64b8cce!2sBakkah%20Tower!5e0!3m2!1sen!2sbd!4v1753042646978!5m2!1sen!2sbd"
+            width="550.31"
+            height="450"
+            style={{ border: 0, borderRadius: "0" }}
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
 
+        {/* Contact Form */}
         <form className="contact-form">
+          <div className="contactAdd">
+            <p>Bakkah Tower, 18 Kemal Ataturk Ave, Dhaka 1212</p>
+          </div>
+
           <input type="text" placeholder="Name" />
           <input type="email" placeholder="Email" />
-          <input type="text" placeholder="Message" />
+          <input type="text" placeholder="Subject" />
           <textarea placeholder="Message" rows={5}></textarea>
           <button type="submit">Send</button>
         </form>
       </div>
 
-      {/* On going end */}
-
-      {/* footer */}
-      <Footer></Footer>
+      {/* Footer */}
+      <Footer />
     </div>
   );
 }
