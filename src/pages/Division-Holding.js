@@ -8,7 +8,7 @@ function Division_Holding() {
     <div>
       <Headers></Headers>
       <div className="all-hero">
-        <img src="Division-hero.png" />
+        <img src="holdingHero.svg" />
       </div>
       {/* Core Business start */}
       <div className="Core-title">

@@ -8,7 +8,7 @@ function DivisionTrade() {
     <div>
       <Headers></Headers>
       <div className="all-hero">
-        <img src="tradeH.png" />
+        <img src="tradeH.svg" />
       </div>
       {/* Core Business start */}
       <div className="Core-title">
@@ -55,7 +55,7 @@ function DivisionTrade() {
           />
           <DivisionCard
             title="Support & Services"
-            image="/trade2.png"
+            image="/trade3.png"
             features={` 360 Call Centre Solutions`}
           />
         </div>

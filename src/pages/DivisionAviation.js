@@ -8,7 +8,7 @@ function DivisionAviation() {
     <div>
       <Headers></Headers>
       <div className="all-hero">
-        <img src="aviationH.png" />
+        <img src="aviationH.svg" />
       </div>
       {/* Core Business start */}
       <div className="Core-title">

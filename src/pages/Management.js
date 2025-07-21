@@ -9,7 +9,7 @@ function Management() {
     <div>
       <Headers></Headers>
       <div className="all-hero">
-        <img src="director.png" />
+        <img src="director.svg" />
       </div>
       {/* Core Business start */}
       <div className="Core-title">

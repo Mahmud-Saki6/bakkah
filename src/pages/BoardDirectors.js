@@ -9,7 +9,7 @@ function BoardDirectors() {
     <div>
       <Headers></Headers>
       <div className="all-hero">
-        <img src="director.png" alt="Hero Image " />
+        <img src="director.svg" alt="Hero Image " />
       </div>
       {/* Core Business start */}
       <div className="Core-title">

@@ -536,7 +536,7 @@ height: 18px;
   /* dreams start */
 
   .giving-best-section {
-  background-image: url('/public/Section.png'); /* Use your image path */
+  background-image: url('/public/Section.svg'); /* Use your image path */
   background-size: cover;
   background-position: center;
   height: 700px;

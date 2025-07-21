@@ -8,7 +8,7 @@ function DivisionHealthCare() {
     <div>
       <Headers></Headers>
       <div className="all-hero">
-        <img src="divisionhealthhero.png" />
+        <img src="healthHero.png" />
       </div>
       {/* Core Business start */}
       <div className="Core-title">

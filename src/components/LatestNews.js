@@ -3,19 +3,19 @@ import React from "react";
 const newsItems = [
   {
     id: 1,
-    image: "news1.png",
+    image: "new1.svg",
     badge: "PRESS",
     text: "Established in 2025, Bakkah Power Energy and Mineral Ltd is a forward-thinking energy and infrastructure company",
   },
   {
     id: 2,
-    image: "news2.png",
+    image: "new2.svg",
     badge: "PRESS",
     text: "Our goal is to empower businesses and institutions through technology—supporting growth, efficiency, and transformation.",
   },
   {
     id: 3,
-    image: "news3.png",
+    image: "new3.svg",
     badge: "BLOG",
     text: "Licensed by Petrobangla—Bakkah Power collaborates with global leaders such as VAE Control (Czech Republic) and China Machinery Engineering Corporation (CMEC)",
   },

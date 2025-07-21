@@ -8,7 +8,7 @@ function DivisionPower() {
     <div>
       <Headers></Headers>
       <div className="all-hero">
-        <img src="powerH.png" />
+        <img src="powerH.jpg" />
       </div>
       {/* Core Business start */}
       <div className="Core-title">
@@ -47,9 +47,9 @@ function DivisionPower() {
       </div>
 
       <div className="division-card-container">
-        <DivisionCard title="OIl & Gas" image="/oil.png" />
-        <DivisionCard title="Power" image="/powerC.png" />
-        <DivisionCard title="Mining" image="/miningC.png" />
+        <DivisionCard title="OIl & Gas" image="oidC.svg" />
+        <DivisionCard title="Power" image="/powerC.svg" />
+        <DivisionCard title="Mining" image="/miningC.svg" />
       </div>
 
       <Footer></Footer>

@@ -8,7 +8,7 @@ function Media() {
     <div>
       <Headers></Headers>
       <div className="all-hero">
-        <img src="mediaH.png" />
+        <img src="mediaH.jpg" />
       </div>
       {/* Core Business start */}
       <div className="Core-title">
@@ -58,9 +58,9 @@ function Media() {
       </div>
 
       <div className="division-card-container">
-        <img src="g24.png" width={420} alt="g24" />
-        <img src="g25.png" width={420} alt="g25" />
-        <img src="g26.png" width={420} alt="g25" />
+        <img src="g24.jpg" width={420} alt="g24" />
+        <img src="g25.jpg" width={420} alt="g25" />
+        <img src="g26.jpg" width={420} alt="g25" />
       </div>
 
       {/* footer */}

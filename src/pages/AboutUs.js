@@ -9,14 +9,14 @@ function AboutUs() {
     <div>
       <Headers />
       <div className="all-hero">
-        <img src="about.png" alt="Hero Image" />
+        <img src="about.svg" alt="Hero Image" />
       </div>
 
       {/* About Content Section */}
       <div className="division-card-container">
         <div className=" about">
           <div>
-            <img src="abc.png" width={619} alt="About Visual" />
+            <img src="abcdef.png" width={619} alt="About Visual" />
           </div>
 
           <div className="about-content">
