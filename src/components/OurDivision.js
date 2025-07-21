@@ -2,27 +2,27 @@ import React, { useEffect, useState } from "react";
 
 const divisions = [
   {
-    image: "real.png",
+    image: "realS.png",
     title: "Real Estate",
   },
   {
-    image: "health.png",
+    image: "healthS.png",
     title: "Health Care",
   },
   {
-    image: "powerM.png",
+    image: "powerS.png",
     title: "Power, Energy & Mineral",
   },
   {
-    image: "powerM.png",
+    image: "powerS.png",
     title: "Power, Energy & Mineral",
   },
   {
-    image: "aviationL.png",
+    image: "aviationS.png",
     title: "Aviation",
   },
   {
-    image: "trade.png",
+    image: "tradeS.png",
     title: "Technology",
   },
 ];
